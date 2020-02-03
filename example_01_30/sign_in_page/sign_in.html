@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/sign_in.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js?var=2"></script>
+    <script src="./script/sign_in.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="div_sign_in" style="width: 800px; height: 1000px;">
+        <form name="signUpForm" action="./sign_in_page_php/sign_in.php" method="POST">
+            <h2>필수 항목</h2>
+            <input type="text" placeholder="아이디" id="inputId" name="inputId"/>
+            <p id="checkId"> </p>
+            <br/>
+            <table id="pass_table">
+                <tr>
+                    <td>
+                        <input type="password" placeholder="비밀번호" id="inputPassword" name="inputPassword">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="password" placeholder="비밀번호 확인" id="inputPasswordCheck">
+                    </td>
+                </tr>
+            </table>
+            <p id="checkPass"></p>
+            <br/>
+            <input type="text" placeholder="이름" id="inputName" name="inputName"/>
+            <p id="checkName"></p>
+            <br/>
+            <div id="div_email">
+                <input type="text" placeholder="이메일" id="inputFirstEmail" name="inputFirstEmail"/> @ 
+                <input type="text" placeholder="이메일 주소" id="inputSecondEmail" name="inputSecondEmail"/>
+                <button type="button" id="bt_email">ㅁ</button>
+            </div>
+            <p id="checkEmail"></p>
+            <div id="div_sub_agree">
+                <input type="checkbox" id="checkBoxAge"> 만 14세 이상입니다. 
+                <br/>
+                <input type="checkbox" id="checkBoxUse"> 이용약관 동의
+                <button type="button">내용보기</button>
+                <br/>
+                <input type="checkbox" id="checkBoxInfo"> 개인정보 수집 및 이용 동의
+                <button type="button">내용보기</button>
+            </div>
+            <br/>
+            <table>
+                <tr>
+                    <th>구분</th>
+                    <th>목적</th>
+                    <th>항목</th>
+                    <th>보유 및 이용기간</th>
+                </tr>
+                <tr>
+                    <td>필수</td>
+                    <td>이용자 식별, 서비스 이행을 위한 연락</td>
+                    <td>이름, 아이디, 비밀번호, 이메일</td>
+                    <td>회원 탈퇴 후 5일 까지</td>
+                </tr>
+            </table>
+            <hr />
+            <br/>
+            <h2>선택 항목</h2>
+            <table id="table_choice_item">
+                <tr>
+                    <td>생년 월일</td>
+                    <td>
+                        <input type="date" id="inputDate" name="inputDate">
+                    </td>
+                </tr>
+                <tr>
+                    <td>성별</td>
+                    <td>
+                        <label for="member">
+                            <input type="radio" id="radioMember" name="gender" value="male"/>
+                            <span>남자</span>
+                        </label>
+                        <label for="notmember">
+                            <input type="radio" id="radioNotMember" name="gender" value="female"/>
+                            <span>여자</span>
+                        </label>
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <br/>
+            <div id="div_agree_table">
+                <table id="agree_table">
+                    <tr class="trClass">
+                        <td rowspan="3" id="tdId"><input type="checkbox">전체동의</td>
+                        <td><input type="checkbox" id="checkBoxBirth">
+                            <span class="span_agree">생년월일과 성별 수집 및 이용 동의</span></td>
+                    </tr>
+                    <tr class="trClass">
+                        <td><input type="checkbox" id="checkBoxEmail">
+                            <span class="span_agree">이메일 마케팅 수신 동의</span></td>
+                    </tr>
+                    <tr class="trClass">
+                        <td><input type="checkbox" id="checkBoxTerm">
+                            <span class="span_agree">개인정보 유효기간 3년 지정(미동의 시 1년)</span></td>
+                    </tr>
+                </table>
+            </div>
+            <br/>
+            <br/>
+            <table style="margin-bottom: 50px;">
+                <tr>
+                    <th>구분</th>
+                    <th>목적</th>
+                    <th>항목</th>
+                    <th>보유 및 이용기간</th>
+                </tr>
+                <tr>
+                    <td>선택</td>
+                    <td>맞춤 정보 제공, 마케팅</td>
+                    <td>성별, 생년월일</td>
+                    <td>회원 탈퇴 후 5일 까지</td>
+                </tr>
+            </table>
+            <input type="button" id="bt_result" value="회원가입하기">
+        </form>
+    </div>
+</body>
+</html>

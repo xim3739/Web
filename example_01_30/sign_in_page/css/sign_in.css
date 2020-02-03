@@ -1,0 +1,99 @@
+body {
+    margin-left: 20%;
+}
+
+input {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+table tr,th,td{
+    border : 1px solid silver;
+    text-align: center;
+    font-size: 12px;
+}
+table {
+    width: 100%;
+    border : 1px solid silver;
+    border-collapse: collapse;
+}
+#pass_table {
+    border: 0;
+}
+#pass_table tr,td{
+    border: 0;
+}
+#pass_table {
+    width: 100%;
+}
+
+#div_email input {
+    width: 384.6px;
+}
+#div_sub_agree input {
+    width: 5%;
+}
+
+#table_choice_item input{
+    width: 5%;
+}
+#table_choice_item #inputDate{
+    width: 100%;
+}
+
+#div_agree input {
+    width: 5%;
+}
+#div_detail_agree .span_agree {
+    font-size: 10px;
+}
+#div_total_agree {
+    display: inline-block;
+    width: 30%;
+    height: 80px;
+    text-align: center;
+}
+#div_detail_agree {
+    display: inline-block;
+    text-align: center;
+    height: 136px;
+    padding-top: 50px;
+}
+#agree_table {
+    width: 65%;
+}
+#agree_table input{
+    width: 30px;
+}
+#agree_table tr {
+    border: 0;
+}
+.trClass td{
+    text-align: left;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+#tdId {
+    text-align: center;
+}
+#div_agree_table {
+    margin-left: 29%;
+}
+#bt_result {
+    margin-left: 39%;
+    width: 30%;
+    height: 50px;
+    font-size: 35px;
+    background-color: steelblue;
+}
+#div_email {
+    position: relative;
+}
+#bt_email {
+    position: absolute;
+    right: 0;
+}
+
+p {
+    color: red;
+}

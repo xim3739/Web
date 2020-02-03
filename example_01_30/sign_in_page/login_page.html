@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/login_page.css">
+    <script src="./script/login_page.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="div_login" style="width: 350px;">
+        <h2>로그인</h2>
+        <form name="loginForm" action="./sign_in_page_php/login_page.php" method="POST" style="width: 350px;">
+            <div id="div_radio">
+                <label for="member">
+                    <input type="radio" id="radioMember" name="gender" value="member"/>
+                    <span>회원</span>
+                </label>
+                <label for="notmember">
+                    <input type="radio" id="radioNotMember" name="gender" value="notmember"/>
+                    <span>비회원</span>
+                </label>
+            </div>
+            <div id="div_input_info">
+                <div style="display : inline-block; width: 300px;">
+                    <label for="inputId" class="inputTextClass">아이디
+                        <input type="text" id="inputId" name="inputId"/>
+                    </label>
+                    <br/>
+                    <label for="inputPass" class="inputTextClass">비밀번호
+                        <input type="password" id="inputPassword" name="inputPassword"/>
+                    </label>
+                </div>
+                <input type="submit" id="buttonLogin" value="LOGIN">LOGIN</input>
+            </div>
+            <div id="div_login_check_info">
+                <label for="member">
+                    <input type="checkbox" id="checkBoxIdSave" name="idSave" value="idSave"/>
+                    <span>아이디 저장</span>
+                </label>
+                <label for="notmember">
+                    <input type="checkbox" id="checkBoxSecurity" name="security" value="security"/>
+                    <span>키보드 보안접속</span>
+                </label>
+            </div>
+            <div id="div_login_bottom">
+                <button type="button" class="login_bottom_button" onclick="window.open('./sign_in.html');">
+                    <span>회원가입</span>
+                </button>
+                <button type="button" class="login_bottom_button">
+                    <span>아이디 찾기</span>
+                </button>
+                <button type="button" class="login_bottom_button">
+                    <span>비밀번호 찾기</span>
+                </button>
+            </div>
+        </form>
+
+    </div>
+</body>
+</html>

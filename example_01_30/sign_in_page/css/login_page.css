@@ -1,0 +1,81 @@
+body {
+    margin-left: 37%;
+    margin-top: 10%;
+}
+
+#div_login {
+    display: inline-block;
+}
+#div_login form {
+    display: inline-block;
+    width: 700;
+    height: 600;
+}
+h2{
+    border-bottom: 1px solid silver;
+    padding-bottom: 5px;
+}
+
+/* div_radio*/
+#div_radio {
+    text-align: center;
+    margin-bottom: 8px;
+}
+#div_radio label {
+    margin-right: 20%;
+}
+#div_radio span {
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+/* div_input_info */
+#div_input_info {
+    position: relative;
+    margin-bottom: 15px;;
+}
+#div_input_info label {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    text-align: center;
+}
+#div_input_info .inputTextClass {
+    width: 79%;
+}
+#div_input_info input {
+    font-size: 13px;
+}
+#buttonLogin {
+    position: absolute;
+    display: inline-block;
+    background-color: burlywood;
+    font-size: 18px;
+    font-weight: bold;
+    height: 57px;
+    top: 0;
+    right: 0;
+}
+
+/* div_login_check_info */
+#div_login_check_info {
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 35px;
+}
+#div_login_check_info label{
+    margin-right: 8%;
+}
+
+/* div_login_bottom */
+#div_login_bottom {
+    text-align: center;
+}
+#div_login_bottom .login_bottom_button {
+    font-size: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#div_login_bottom .login_bottom_button span{
+    font-weight: bold;
+}

@@ -1,0 +1,142 @@
+h2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#div_sign_in{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+input {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border-radius: 10px / 10px;
+}
+table tr,th,td{
+    border : 1px solid silver;
+    text-align: center;
+    font-size: 12px;
+}
+table {
+    width: 100%;
+    border : 1px solid silver;
+    border-collapse: collapse;
+}
+#pass_table {
+    border: 0;
+}
+#pass_table tr,td{
+    border: 0;
+}
+#pass_table {
+    width: 100%;
+}
+
+#div_email input {
+    width: 384.6px;
+}
+#div_sub_agree input {
+    width: 5%;
+}
+#div_sub_agree_content {
+    width: 210px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border: 1px solid silver;
+    padding: 15px;
+}
+
+#div_sub_agree_content input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#table_choice_item input{
+    width: 5%;
+}
+#table_choice_item #inputDate{
+    width: 100%;
+}
+#div_agree input {
+    width: 5%;
+}
+#div_detail_agree .span_agree {
+    font-size: 10px;
+}
+#div_total_agree {
+    display: inline-block;
+    width: 30%;
+    height: 80px;
+    text-align: center;
+}
+#div_detail_agree {
+    display: inline-block;
+    text-align: center;
+    height: 136px;
+    padding-top: 50px;
+}
+#agree_table {
+    width: 65%;
+}
+#agree_table input{
+    width: 30px;
+}
+#agree_table tr {
+    border: 0;
+}
+.trClass td{
+    text-align: left;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+#tdId {
+    text-align: center;
+}
+#agree_table {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+#agree_table tr td input{
+    margin-left: 10px;
+}
+#agree_table tr td span{
+    margin-right: 10px;
+}
+#bt_result {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+    width: 30%;
+    height: 50px;
+    font-size: 35px;
+    background-color: #443e58;
+    border-radius: 10px / 10px;
+}
+#table_choice_item #inputDate {
+    border-radius: 0;
+    width: 90%;
+    border: 0;
+}
+#bt_email {
+    position: absolute;
+    right: 0;
+}
+
+p {
+    color: red;
+}
+
+.inputSet1 {
+    width: 100%;
+    height: 30px;
+}
+#div_email .inputSet2 {
+    width: 336px;
+    height: 30px;
+}
