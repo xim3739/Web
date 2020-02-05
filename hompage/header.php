@@ -41,7 +41,7 @@
         <li> | </li>
         <li><a href="logout.php">로그아웃</a></li>
         <li> | </li>
-        <li><a href="member_modify_form.php">정보 수정</a></li>
+        <li><a href="sign_in_modify.php">정보 수정</a></li>
     <?php
         }
     ?>

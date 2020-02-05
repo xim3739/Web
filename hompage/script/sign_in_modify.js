@@ -25,29 +25,8 @@ $(function () {
         console.log($inputId.val())
         if(!idExp.test($inputId.val())) {
             $checkId.text("형식에 맞지 않습니다.");
-
-        }else {
-            let id = $inputId.val();
-            console.log("ajax : " + id);
-            $.ajax({
-                type: "post",
-                url: "./member_checkId.php",
-                data: {
-                    "inputId" : id
-                },
-                success: function (response) {
-                    if(response === "1") {
-                        $checkId.text("사용중인 아이디 입니다.");
-                        console.log("1" + response);
-                    } else if(response === "0") {
-                        $checkId.text("사용 가능한 아이디 입니다.");
-                        console.log("2" + response);
-                    } else {
-                        $checkId.text("에러 입니다.");
-                        console.log("3" + response);
-                    }
-                }
-            });
+        } else {
+            $checkId.text("올바른 형식 입니다.");
         }
     });
     $inputPassword.keyup(function (e) { //비밀번호의 형식이 올바른지 확인
@@ -63,7 +42,7 @@ $(function () {
         if(!($inputPassword.val() === $inputPasswordCheck.val())) {
             $checkPass.text("일치 하지 않습니다.");
         } else {
-            $checkPass.text("일치 합니다.");
+            $checkPass.text("올바른 형식 입니다.");
         }
     });
     $inputName.keyup(function (e) { //이름의 형식이 맞는지 확인
@@ -90,21 +69,11 @@ $(function () {
             $checkEmail.text("올바른 형식 입니다.");
         }
     });
+
+    initCheckValue();
+    
     $btResult.click(function () { //회원가입의 버튼을 눌렀을때 
-        let checkBoxAge = $("#checkBoxAge").is(":checked");//체크 박스가 체크가 되었는지 안되어있는지 확인 여부 
-        let checkBoxUse = $("#checkBoxUse").is(":checked");
-        let checkBoxInfo = $("#checkBoxInfo").is(":checked");
-        let checkBoxBirth = $("#checkBoxBirth").is(":checked");
-        let checkBoxEmail = $("#checkBoxEmail").is(":checked");
-        let checkBoxTerm = $("#checkBoxTerm").is(":checked");
 
-        console.log(checkBoxAge,checkBoxUse,checkBoxInfo);
-
-        if(!(checkBoxAge && checkBoxUse && checkBoxInfo &&//만약 체크가 되어있지 않다면 채크를 해달라고 alert로 띄어준다
-            checkBoxBirth && checkBoxEmail && checkBoxTerm)) {
-            alert("try check CheckBox");
-            return;
-        }
         if(((!$inputId.val()) || (!$inputPassword.val()) || (!$inputPasswordCheck.val()) || //하나라도 input값이 비어있으면 input을 확인해 달라고  alert로 띄어준다
         (!$inputName.val()) || (!$inputFirstEmail.val()) || (!$inputSecondEmail.val()))) {
             console.log(((!$inputId.val()) || (!$inputPassword.val()) || (!$inputPasswordCheck.val()) ||
@@ -121,8 +90,14 @@ $(function () {
                 return;
             }
         }
-        
         alert("success");//이 모든 조건이 성립이 되었을때 alert으로 성공 했다고 띄어 준다
         document.member_form.submit();
     });
+
+    function initCheckValue() {
+        $checkId.text("올바른 형식 입니다.");
+        $checkPass.text("올바른 형식 입니다.");
+        $checkName.text("올바른 형식 입니다.");
+        $checkEmail.text("올바른 형식 입니다.");
+    }
 });

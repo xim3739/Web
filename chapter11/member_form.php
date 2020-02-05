@@ -5,6 +5,8 @@
 <title>PHP 프로그래밍 입문</title>
 <link rel="stylesheet" type="text/css" href="./css/common.css">
 <link rel="stylesheet" type="text/css" href="./css/member.css">
+<script src="http://code.jquery.com/jquery-1.12.4.min.js" charset="utf-8"></script>
+<script src="./js/member_form.js" charset="utf-8"></script>
 <script>
    function check_input()
    {
@@ -88,7 +90,8 @@
     		    	<div class="form id">
 				        <div class="col1">아이디</div>
 				        <div class="col2">
-							<input type="text" name="id">
+                            <input type="text" name="id" id="inputId">
+                            <p id="idSubMsg"></p>
 				        </div>  
 				        <div class="col3">
 				        	<a href="#"><img src="./img/check_id.gif" 
